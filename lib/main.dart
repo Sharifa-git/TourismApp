@@ -26,7 +26,7 @@ class myHome extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Tourism App',
+          'Tourism Application',
           style: TextStyle(
             color: Colors.white,
             letterSpacing: 2.0,
@@ -35,6 +35,27 @@ class myHome extends StatelessWidget {
         backgroundColor: Colors.green,
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Container(
+          
+            color: Colors.green[800],
+          
+            margin: EdgeInsets.zero,
+          
+            padding: EdgeInsets.all(20),
+          
+            height: 300.0,
+          
+            width: 500.0,
+          
+            child: Image(image: AssetImage('images/Salalah2.jpg'))
+          
+            ),
+            Image(image: AssetImage('images/Salalah3.jpg'))
+        ],
+      ),
+       
     );
   }
 }
